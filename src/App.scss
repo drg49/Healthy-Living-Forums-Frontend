@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+$gradient: linear-gradient( 105.3deg,  rgba(30,39,107,1) 21.8%, rgba(77,118,221,1) 100.2% );
+
+.App {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  max-width: 900px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+#homepage {
+
+h1 {
+  background-image: $gradient;
+  margin: 0;
+  padding: 25px;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 2px;
+  font-size: 38px;
+}
+
+h2 {
+  color: white;
+}
+
+}
+
+/* HOME - WELCOME PAGE */
+#home {
+  padding: 125px;
+
+  div {
+    background-color: rgba(255, 255, 255, 0.719);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 810px;
+    margin: auto;
+    padding: 40px 0px;
+  }
+
+  p {
+    font-family: 'Alegreya', serif;
+    font-size: 40px;
+    max-width: 429px;
+    margin: auto;
+    padding: 45px;
+  }
+
+  section {
+    width: fit-content;
+    margin: auto;
+  }
+
+  section h2 {
+    border-radius: 6px;
+    padding: 10px 17px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+}
+
+#signup {
+  background-color: orangered;
+  color: white;
+}
+
+#login {
+  background-color: orange;
+  color: white;
+}
+
+#signup:hover {
+  opacity: 0.9;
+}
+
+#login:hover {
+  opacity: 0.9;
+}
+
+#banner {
+  background-image: url("./components/banner.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+article {
+  max-width: 800px;
+  margin: auto;
+  height: 100%;
+  p {
+    line-height: 2em;
+    color: white;
+    font-size: 18px;
+  }
+}
+
