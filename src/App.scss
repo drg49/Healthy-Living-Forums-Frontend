@@ -250,4 +250,19 @@ textarea {
 
 #delete-div {
   text-align: right;
+
+  button {
+    background: none;
+    cursor: pointer;
+    border: none;
+    padding: 0px;
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
 }
+
