@@ -1,7 +1,10 @@
-import React, {useContext, useState, useEffect} from 'react'
+import React, {useContext, useState} from 'react'
 import {GlobalCtx} from "../App"
+import Title from '../components/Title'
 
 const Login = (props) => {
+
+
 
     const {gState, setGState} = useContext(GlobalCtx)
     const {url} = gState
@@ -35,6 +38,7 @@ const Login = (props) => {
                 setErrorText("Invalid username or password.")
             } else {
                 localStorage.setItem("token", JSON.stringify(data))
+                localStorage.setItem("user", data.user)
                 setGState({...gState, token: data.token})
                 setForm(blank) //reset the form
                 props.history.push("/")
@@ -48,21 +52,20 @@ const Login = (props) => {
         }
     }
 
-    useEffect(() => {
-        document.body.style.backgroundColor ="yellow"
-    })
 
-
-    return <nav>
-        <div>
-            <p>{errorText}</p>
-            <form onSubmit={handleSubmit}>
-                <input type="text" name="username" value={form.username} onChange={handleChange} placeholder="Username" onKeyDown={preventSpace} minLength="3" maxLength="15" required/>
-                <input type="password" name="password" value={form.password} onChange={handleChange} placeholder="Password" minLength="3" maxLength="30" required/>
-                <input type="submit" value="Login" />
-            </form>
-        </div>
-    </nav>
+    return (
+        <>
+            <Title />
+            <div id="form-div">
+                <p id="error-text">{errorText}</p>
+                <form onSubmit={handleSubmit}>
+                    <input type="text" name="username" value={form.username} onChange={handleChange} placeholder="Username" onKeyDown={preventSpace} minLength="3" maxLength="15" required/>
+                    <input type="password" name="password" value={form.password} onChange={handleChange} placeholder="Password" minLength="3" maxLength="30" required/>
+                    <input type="submit" value="Login" id="login"/>
+                </form>
+            </div>
+        </>
+    )
 }
 
 export default Login

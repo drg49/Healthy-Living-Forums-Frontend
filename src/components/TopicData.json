@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Addiction",
+        "path": "/topic/Addiction",
+        "desc": "A section where users can find support when dealing with substance abuse."
+    },
+    {
+        "name": "Adulthood",
+        "path": "/topic/Adulthood",
+        "desc": "A section where users can share their experences of entering adulthood."
+    },    
+    {
+        "name": "Athletics",
+        "path": "/topic/Athletics",
+        "desc": "A section where users can talk about sports and athletics."
+    },    
+    {
+        "name": "Diet",
+        "path": "/topic/Diet",
+        "desc": "A section where users can share healthy recipes and find help on dieting."
+    },    
+    {
+        "name": "Disability",
+        "path": "/topic/Disability",
+        "desc": "A section where users can discuss their physical disabilities."
+    },    
+    {
+        "name": "Exercise",
+        "path": "/topic/Exercise",
+        "desc": "A section where users can share workouts and discuss other ways of exercising."
+    },    
+    {
+        "name": "Injuries",
+        "path": "/topic/Injuries",
+        "desc": "A section where users can discuss their injuries."
+    },    
+    {
+        "name": "LGBTQ+ Section",
+        "path": "/topic/LGBTQ+ Section",
+        "desc": "A section where the LGBTQ+ community can discuss health topics pertaining to them."
+    },    
+    {
+        "name": "Medications",
+        "path": "/topic/Medications",
+        "desc": "A section where users can share their experience of taking certain medications."
+    },    
+    {
+        "name": "Men's Section",
+        "path": "/topic/Men's Section",
+        "desc": "A section where men can discuss health topics pertaining to men."
+    },    
+    {
+        "name": "Mental Health",
+        "path": "/topic/Mental Health",
+        "desc": "A section where users can discuss mental health and disorders."
+    },    
+    {
+        "name": "Personal Development",
+        "path": "/topic/Personal Development",
+        "desc": "A section where users can discuss growth and personal development."
+    },    
+    {
+        "name": "Relationships",
+        "path": "/topic/Relationships",
+        "desc": "A section where users can discuss their personal relationships with other people."
+    },    
+    {
+        "name": "Surgery & Recovery",
+        "path": "/topic/Surgery & Recovery",
+        "desc": "A section where users can find support before and after surgeries."
+    },    
+    {
+        "name": "Women's Section",
+        "path": "/topic/Women's Section",
+        "desc": "A section where women can discuss health topics pertaining to women."
+    },    
+    {
+        "name": "Work & Careers",
+        "path": "/topic/Work & Careers",
+        "desc": "A section where users can discuss their overall health in the workplace."
+    }
+]

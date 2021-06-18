@@ -1,5 +1,42 @@
+import { useEffect, useState } from 'react'
+
+import { Link, useHistory } from 'react-router-dom'
+import topicdata from '../components/TopicData.json'
+
 const Dashboard = () => {
-    return <h1>Dashboard</h1>
+
+    let history = useHistory()
+    const [ locationKeys, setLocationKeys ] = useState([]) //Prevent bugs on browser back/forward button
+    useEffect(() => {
+      return history.listen(location => {
+        if (history.action === 'PUSH') {
+          setLocationKeys([ location.key ])
+        }
+        if (history.action === 'POP') {
+          if (locationKeys[1] === location.key) {
+            setLocationKeys(([ _, ...keys ]) => keys)
+            window.location.reload()
+          } else {
+            setLocationKeys((keys) => [ location.key, ...keys ])
+            window.location.reload()
+          }
+        }
+      })
+    }, [ locationKeys, ])
+
+    const links = topicdata.map((topic, index) => {
+        return (
+            <Link to={topic.path} key={index}><p>{topic.name}</p></Link>
+        )
+    })
+
+    return (
+    <>
+        <section id="topics">
+            {links}
+        </section>
+    </>
+    )
 }
 
 export default Dashboard

@@ -4,11 +4,6 @@ import {Link} from 'react-router-dom'
 
 const Home = () => {
 
-    useEffect(() => {
-        document.body.style.backgroundColor ="#1E276B"
-    })
-
-
     return (
         <div id="homepage">
             <h1>Healthy Living Forum</h1>
