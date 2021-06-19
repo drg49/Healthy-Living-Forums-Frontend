@@ -17,6 +17,7 @@ const Thread = (props) => {
 
     const [postsToShow, setPostsToShow] = useState([]);
     const [next, setNext] = useState(3);
+    const [postLength, setPostLength] = useState(null)
 
     const getThread = () => {
         fetch(`${url}/posts/${id}`, {
@@ -54,6 +55,7 @@ const Thread = (props) => {
             }
         }).then(response => response.json())
         .then((data) => {
+            setPostLength(data.length)
             loopWithSlice(a, b, data.reverse())
         })
     }
@@ -76,7 +78,7 @@ const Thread = (props) => {
             {thread}
             <AddComment postid={id} />
             <Comments postsToShow={postsToShow}/>
-            <button onClick={handleShowMorePosts} id="show-more">Show More</button>
+            {postLength !== postsToShow.length && postLength > 3 ? <button onClick={handleShowMorePosts} id="show-more">Show More</button> : null}
         </div>
     )
      

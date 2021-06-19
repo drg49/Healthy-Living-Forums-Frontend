@@ -40,6 +40,7 @@ const Topic = (props) => {
 
     const [postsToShow, setPostsToShow] = useState([]);
     const [next, setNext] = useState(3);
+    const [postLength, setPostLength] = useState(null)
 
     const loopWithSlice = (start, end, val) => {
         const slicedPosts = val.slice(start, end)
@@ -55,7 +56,7 @@ const Topic = (props) => {
             }
         }).then(response => response.json())
         .then(data => {
-            console.log(data)
+            setPostLength(data.length)
             data.sort((a, b) => b.id - a.id)
             loopWithSlice(a, b, data)
         }) 
@@ -76,7 +77,7 @@ const Topic = (props) => {
             <p id="topic-desc">{name.desc}</p>
             <Link to={`/post/${topic}`}><p id="create-btn">Create New Thread</p></Link>
             <ThreadCards postsToShow={postsToShow}/>
-            <button onClick={handleShowMorePosts} id="show-more">Show More</button>
+            {postLength !== postsToShow.length && postLength > 3 ? <button onClick={handleShowMorePosts} id="show-more">Show More</button> : null}
         </div>
     )
     
