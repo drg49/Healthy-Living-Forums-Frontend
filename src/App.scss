@@ -212,6 +212,8 @@ textarea {
   }
 }
 
+//Thread Card//
+
 #thread-card {
   text-align: left;
   border: 1px solid blue;
@@ -219,10 +221,38 @@ textarea {
   max-width: 820px;
   padding: 0px 10px;
   background-color: whitesmoke;
+  transition: 250ms;
 
   h2 {
     font-weight: 300;
     margin-bottom: 0px;
+  }
+}
+
+#thread-card:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+#single-thread {
+  text-align: left;
+  border: 1px solid blue;
+  margin: 10px auto;
+  max-width: 820px;
+  padding: 0px 10px;
+  background-color: whitesmoke;
+  border-radius: 3px;
+
+  h2 {
+    margin-bottom: 0px;
+  }
+
+  h3 {
+    font-style: italic;
+  } 
+
+  p {
+    margin-top: 0px;
   }
 }
 
@@ -251,6 +281,10 @@ textarea {
 #delete-div {
   text-align: right;
 
+  button:first-of-type {
+    margin-right: 14px;
+  }
+
   button {
     background: none;
     cursor: pointer;
@@ -258,11 +292,58 @@ textarea {
     padding: 0px;
     font-size: 18px;
     margin-bottom: 3px;
+    transition: 250ms;
   }
 
-  button:hover {
-    opacity: 0.8;
+  button:first-of-type:hover {
+    color: blue;
+  }
+
+  button:last-of-type:hover {
+    color: red;
   }
 
 }
 
+#add-comment {
+  max-width: 820px;
+  margin: auto;
+  text-align: right;
+  
+  textarea {
+    width: 68%;
+    height: 105px;
+  }
+  
+}
+
+#comment-bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  p {
+    color: white;
+    margin: 0px 18px 0px 0px;
+    // margin-right: 18px;
+  }
+
+}
+
+#comment-btns {
+
+  button {
+    padding: 5px 7px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 80px;
+    border: none;
+    outline: none;
+  }
+
+  button:first-of-type {
+    margin-right: 5px;
+  }
+
+}

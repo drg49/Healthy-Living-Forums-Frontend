@@ -64,7 +64,7 @@ const Create = (props) => {
                 <label htmlFor="title">Title:</label><br />
                 <input ref={titleRef} type="text" id="title" maxLength="70" required/><br />
                 <label htmlFor="message">Message:</label>
-                <textarea ref={bodyRef} id="message" maxLength="1000" onKeyUp={count} onKeyDown={count} required></textarea>
+                <textarea ref={bodyRef} id="message" maxLength="1000" onChange={count} required></textarea>
                 <div id="post-bottom">
                     <p>Characters left: {words}</p>
                     <input type="submit" value="Post"/>

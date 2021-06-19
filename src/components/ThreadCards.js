@@ -16,29 +16,26 @@ const ThreadCards = ({postsToShow}) => {
 
     const currentUser = localStorage.getItem("user")
 
-
     const handleDelete = (id, e) => {
         e.stopPropagation() //Since we have an onClick div inside another onClick div, we have to pass this event handler. 
         fetch(`${url}/posts/${id}`, {
             method: "delete",
             headers: {
-                Authorization: "bearer " + token
+                "Authorization": "bearer " + token
             }
         }).then(() => window.location.reload())
     }
 
-
-    const goToPost = () => {
-        
-        history.push("/")
-
+    const goToPost = (id) => {  
+        history.push(`/thread/${id}`)
+        window.location.reload()
     }
 
     return (
         <section>
             {postsToShow.map(item => {
             return (
-                <div key={item.id} id="thread-card" onClick={goToPost}>
+                <div key={item.id} id="thread-card" onClick={()=> goToPost(item.id)}>
                     <h2>{item.author}</h2>
                     <div id="thread-bottom">
                         <h3>{item.title}</h3>

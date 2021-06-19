@@ -4,8 +4,6 @@ import Title from '../components/Title'
 
 const Login = (props) => {
 
-
-
     const {gState, setGState} = useContext(GlobalCtx)
     const {url} = gState
 
@@ -51,7 +49,6 @@ const Login = (props) => {
             e.preventDefault();
         }
     }
-
 
     return (
         <>

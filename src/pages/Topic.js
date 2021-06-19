@@ -51,7 +51,7 @@ const Topic = (props) => {
         fetch(`${url}/posts/topic/${topic}`, {
             method: "get",
             headers: {
-                Authorization: "bearer " + token
+                "Authorization": "bearer " + token
             }
         }).then(response => response.json())
         .then(data => {

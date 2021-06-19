@@ -1,5 +1,5 @@
 import { useState, createContext, useEffect } from 'react'
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Header from "./components/Header"
 import Signup from "./pages/Signup"
 import Login from "./pages/Login"
@@ -9,6 +9,7 @@ import Topic from './pages/Topic';
 import Title from './components/Title';
 import MyProfile from './pages/MyProfile';
 import Create from './pages/Create';
+import Thread from './pages/Thread'
 import './App.scss';
 
 export const GlobalCtx = createContext(null)
@@ -40,6 +41,7 @@ function App() {
             <Route path="/login" render={(rp) => <Login {...rp}/>}/>
             <Route path="/topic/:topic" render={(rp => gState.token ? <Topic {...rp}/> : <Home />)}/>
             <Route path="/post/:topic" render={(rp => gState.token ? <Create {...rp}/> : <Home />)}/>
+            <Route path="/thread/:id" render={(rp => gState.token ? <Thread {...rp}/> : <Home />)}/>
             <Route path="/myprofile" render={(rp => gState.token ? <MyProfile /> : <Home />)}/>
             </Switch>
         </main>
