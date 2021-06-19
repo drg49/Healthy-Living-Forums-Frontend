@@ -26,7 +26,9 @@ const Dashboard = () => {
 
     const links = topicdata.map((topic, index) => {
         return (
-            <Link to={topic.path} key={index}><p>{topic.name}</p></Link>
+          <div id="topic-card">
+            <Link to={topic.path} key={index}><p id="topic-link">{topic.name}</p></Link>
+          </div>
         )
     })
 

@@ -16,7 +16,8 @@ const AddComment = ({postid}) => {
 
     const cancel = () => { //if user hits 'cancel'
         setTextbox(null)
-        setButton(<button onClick={beginReply}>Reply</button>)
+        setButton(<button onClick={beginReply} id="reply-btn">Reply</button>)
+        setWord(null)
     }
 
     const beginReply = () => { //when user hits 'reply'
@@ -40,7 +41,7 @@ const AddComment = ({postid}) => {
         }).then(() => window.location.reload())
     }
 
-    const [button, setButton] = useState(<button onClick={beginReply}>Reply</button>) //Initial State
+    const [button, setButton] = useState(<button onClick={beginReply} id="reply-btn">Reply</button>) //Initial State
 
     return (
         <form id="add-comment" onSubmit={handleCreate}>

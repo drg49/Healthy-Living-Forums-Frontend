@@ -1,8 +1,12 @@
 import React, { useContext } from 'react'
-import {Link, useHistory} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import {GlobalCtx} from "../App"
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faUser, faHome} from '@fortawesome/free-solid-svg-icons'
 
-//contains the signup, login, and logout links
+const user = <FontAwesomeIcon icon={faUser} />
+const home = <FontAwesomeIcon icon={faHome} />
+
 const Header = (props) => {
 
     let history = useHistory()
@@ -14,14 +18,14 @@ const Header = (props) => {
         window.location.reload()
     }
 
-    const myProfile = <h2 onClick={goToProfile}>My Profile</h2>
+    const myProfile = <h2 onClick={goToProfile}>{user}</h2>
 
     const goToHome = () => {
         history.push("/")
         window.location.reload()
     }
 
-    const topics = <h2 onClick={goToHome}>Topics</h2>
+    const topics = <h2 onClick={goToHome}>{home}</h2>
 
     return <nav>
         {gState.token ? myProfile : null}

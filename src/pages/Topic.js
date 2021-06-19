@@ -56,7 +56,8 @@ const Topic = (props) => {
         }).then(response => response.json())
         .then(data => {
             console.log(data)
-            loopWithSlice(a, b, data.reverse())
+            data.sort((a, b) => b.id - a.id)
+            loopWithSlice(a, b, data)
         }) 
     }
 
@@ -70,13 +71,13 @@ const Topic = (props) => {
       };
     
     return  (
-        <>
-            <h3>{topic}</h3>
-            <p>{name.desc}</p>
+        <div>
+            <h3 id="topic-title">{topic}</h3>
+            <p id="topic-desc">{name.desc}</p>
             <Link to={`/post/${topic}`}><p id="create-btn">Create New Thread</p></Link>
             <ThreadCards postsToShow={postsToShow}/>
-            <button onClick={handleShowMorePosts}>Show More</button>
-        </>
+            <button onClick={handleShowMorePosts} id="show-more">Show More</button>
+        </div>
     )
     
 }

@@ -76,7 +76,7 @@ const Thread = (props) => {
             {thread}
             <AddComment postid={id} />
             <Comments postsToShow={postsToShow}/>
-            <button onClick={handleShowMorePosts}>Show More Replies</button>
+            <button onClick={handleShowMorePosts} id="show-more">Show More</button>
         </div>
     )
      
