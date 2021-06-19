@@ -54,7 +54,6 @@ const Thread = (props) => {
             }
         }).then(response => response.json())
         .then((data) => {
-            console.log(data)
             loopWithSlice(a, b, data.reverse())
         })
     }

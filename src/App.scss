@@ -359,14 +359,18 @@ textarea {
   text-align: left;
   padding: 0px 10px;
   
-  div {
+  section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
+    p {
+      margin: 0px;
+    }
   }
 
-  p {
-    margin-top: 0px;
-  }
+}
 
+#comment-body {
+  margin: 0px 0px 10px 0px;
 }
