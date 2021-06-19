@@ -37,7 +37,7 @@ const AddComment = ({postid}) => {
                 body: commentRef.current.value,
                 postid: postid
             })
-        })
+        }).then(() => window.location.reload())
     }
 
     const [button, setButton] = useState(<button onClick={beginReply}>Reply</button>) //Initial State

@@ -305,6 +305,8 @@ textarea {
 
 }
 
+// ADD COMMENT //
+
 #add-comment {
   max-width: 820px;
   margin: auto;
@@ -325,7 +327,6 @@ textarea {
   p {
     color: white;
     margin: 0px 18px 0px 0px;
-    // margin-right: 18px;
   }
 
 }
@@ -344,6 +345,28 @@ textarea {
 
   button:first-of-type {
     margin-right: 5px;
+  }
+
+}
+
+////////////////
+// COMMENT BOX //
+#comment-box {
+  background-color: whitesmoke;
+  max-width: 800px;
+  margin: 10px auto;
+  border: 1px solid blue;
+  text-align: left;
+  padding: 0px 10px;
+  
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  p {
+    margin-top: 0px;
   }
 
 }
