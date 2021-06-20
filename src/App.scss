@@ -231,6 +231,10 @@ textarea {
   }
 }
 
+#create-p {
+  color: white;
+}
+
 //Thread Card//
 
 #thread-card {
@@ -440,10 +444,11 @@ textarea {
 #topic-link {
   color: black;
   text-decoration: underline;
+  transition: 150ms;
 }
 
 #topic-link:hover {
-  opacity: 0.9;
+  color: #0099DD;
 }
 
 #show-more {
@@ -457,6 +462,22 @@ textarea {
   background-color: crimson;
   color: white;
 }
+
+// My Profile Page //
+#profile-flex {
+  display: flex;
+  max-width: 750px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0px 10px;  
+}
+
+#logout:hover {
+  opacity: 0.85;
+}
+
 
 @media screen and (max-width: 900px) {
   #topics {

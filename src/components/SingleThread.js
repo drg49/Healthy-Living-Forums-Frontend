@@ -19,7 +19,7 @@ const SingleThread = (props) => {
     const [editForm, setEditForm] = useState(null)
 
     const handleDelete = (id) => {
-        fetch(`${url}/posts/${id}`, {
+        fetch(`${url}/posts/destroyall/${id}`, {
             method: "delete",
             headers: {
                 "Authorization": "bearer " + token

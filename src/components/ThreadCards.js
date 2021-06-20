@@ -18,7 +18,7 @@ const ThreadCards = ({postsToShow}) => {
 
     const handleDelete = (id, e) => {
         e.stopPropagation() //Since we have an onClick div inside another onClick div, we have to pass this event handler. 
-        fetch(`${url}/posts/${id}`, {
+        fetch(`${url}/posts/destroyall/${id}`, {
             method: "delete",
             headers: {
                 "Authorization": "bearer " + token

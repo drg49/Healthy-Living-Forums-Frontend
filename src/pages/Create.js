@@ -59,7 +59,7 @@ const Create = (props) => {
 
     return (
         <>
-            <h4>You are starting a new discussion in: {topic}</h4>
+            <h4 id="create-p">You are starting a new discussion in: {topic}</h4>
             <form id="create-form" onSubmit={handleCreate}>
                 <label htmlFor="title">Title:</label><br />
                 <input ref={titleRef} type="text" id="title" maxLength="70" required/><br />
