@@ -13,7 +13,12 @@
         "name": "Athletics",
         "path": "/topic/Athletics",
         "desc": "A section where users can talk about sports and athletics."
-    },    
+    },
+    {
+        "name": "COVID-19",
+        "path": "/topic/COVID-19",
+        "desc": "A section where users can discuss COVID-19 symptoms and vaccines."
+    },  
     {
         "name": "Diet",
         "path": "/topic/Diet",
@@ -34,6 +39,11 @@
         "path": "/topic/Injuries",
         "desc": "A section where users can discuss their injuries."
     },    
+    {
+        "name": "Illness",
+        "path": "/topic/Illness",
+        "desc": "A section where users can discuss symptoms of various illnesses."
+    },   
     {
         "name": "LGBTQ+ Section",
         "path": "/topic/LGBTQ+ Section",

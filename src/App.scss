@@ -426,7 +426,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   max-width: 900px;
-  margin: 10px auto;
+  margin: auto;
   justify-content: center;
   background-color: whitesmoke;
   border-radius: 6px;
@@ -478,10 +478,71 @@ textarea {
   opacity: 0.85;
 }
 
+// Dashboard //
+#dash-title {
+  color: whitesmoke;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#articles {
+  margin-top: 27px;
+  
+  h2 {
+    color: whitesmoke;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+}
+
+img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-right: 13px;
+}
+
+#article-flex {
+  text-align: left;
+  display: flex;
+  max-width: 717px;
+  margin: auto;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+  cursor: pointer;
+  transition: 150ms;
+}
+
+#article-flex:hover {
+  opacity: 0.95;
+  background-color: rgb(219, 219, 219);
+}
+
+#article-info {
+  p {
+    font-style: italic;
+  }
+}
+
+#article-card {
+  border: 1px solid black;
+  border-radius: 6px;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: whitesmoke;
+  padding: 16px 0px;
+}
 
 @media screen and (max-width: 900px) {
   #topics {
     border-radius: 0px;
+  }
+  #article-card {
+    border-radius: 0px;
+    margin-bottom: 0px;
   }
 }
 

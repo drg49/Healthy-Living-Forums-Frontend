@@ -1,0 +1,26 @@
+[
+    {
+        "title": "COVID-19 Updates: CDC Says Delta Variant Now Variant of Concern",
+        "img": "https://fox11online.com/resources/media2/16x9/full/1015/center/80/248cc7af-20b9-441b-96b4-5331148045cc-large16x9_coronavirus2.jpg",
+        "site": "Healthline",
+        "link": "https://www.healthline.com/health-news/covid-19-updates"
+    },
+    {
+        "title": "Alzheimer’s: Discovery of microscopic metals in patients’ brains may offer clues",
+        "img": "https://www.news-medical.net/image.axd?picture=2019%2F10%2F%40shutterstock_247872679.jpg",
+        "site": "Medical News Today",
+        "link": "https://www.medicalnewstoday.com/articles/alzheimers-discovery-of-microscopic-metals-in-patients-brains-may-offer-clues"
+    },
+    {
+        "title": "Can food choices influence cancer risk?",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAnxIgQ_lqUCrzhjEk1lOwAXg9ZQsdCWAz1bNv-o-jkYH8SWXrd_tyefPG9Sfqy_1PKc0&usqp=CAU",
+        "site": "Medical News Today",
+        "link": "https://www.medicalnewstoday.com/articles/can-food-choices-influence-cancer-risk"
+    },
+    {
+        "title": "14 Best and Worst Foods for Your Liver",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG",
+        "site": "WebMD",
+        "link": "https://www.webmd.com/hepatitis/ss/slideshow-best-and-worst-foods-for-your-liver"
+    }
+]

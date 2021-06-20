@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-
 import { Link, useHistory } from 'react-router-dom'
 import topicdata from '../components/TopicData.json'
+import ArticleSection from '../components/ArticleSection'
 
 const Dashboard = () => {
 
@@ -34,9 +34,11 @@ const Dashboard = () => {
 
     return (
     <>
+        <h2 id="dash-title">Threads</h2>
         <section id="topics">
             {links}
         </section>
+        <ArticleSection />
     </>
     )
 }
