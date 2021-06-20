@@ -1,6 +1,7 @@
 import React, {useContext, useState} from 'react'
 import {GlobalCtx} from "../App"
 import Title from '../components/Title'
+import loading from '../components/loading.gif'
 
 const Login = (props) => {
 
@@ -22,7 +23,7 @@ const Login = (props) => {
     const handleSubmit = (event) => {
         event.preventDefault()
         const {username, password} = form
-
+        setErrorText(<img src={loading} alt="loading" id="loading"/>)
         fetch(`${url}/login`, {
             method: "post",
             headers: {
@@ -54,12 +55,12 @@ const Login = (props) => {
         <>
             <Title />
             <div id="form-div">
-                <p id="error-text">{errorText}</p>
                 <form onSubmit={handleSubmit}>
                     <input type="text" name="username" value={form.username} onChange={handleChange} placeholder="Username" onKeyDown={preventSpace} minLength="3" maxLength="15" required/>
                     <input type="password" name="password" value={form.password} onChange={handleChange} placeholder="Password" minLength="3" maxLength="30" required/>
                     <input type="submit" value="Login" id="login"/>
                 </form>
+                <p id="error-text">{errorText}</p>
             </div>
         </>
     )

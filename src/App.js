@@ -17,7 +17,7 @@ export const GlobalCtx = createContext(null)
 function App() {
 
   const [gState, setGState] = useState({
-    url: "http://localhost:3000", 
+    url: "https://hl-forums.herokuapp.com", 
     token: null
   })
 
