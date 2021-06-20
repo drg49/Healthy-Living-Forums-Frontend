@@ -37,8 +37,6 @@ const Create = (props) => {
 
     const handleCreate = (e) => {
         e.preventDefault()
-        console.log(titleRef.current.value)
-        console.log(bodyRef.current.value)
         fetch(`${url}/posts/`, {
             method: "post",
             headers: {
@@ -50,11 +48,12 @@ const Create = (props) => {
                 body: bodyRef.current.value,
                 topic: topic
             })
+        }).then(() => {
+          titleRef.current.value = ""
+          bodyRef.current.value = ""
+          history.push(`/topic/${topic}`)
+          window.location.reload()
         })
-        titleRef.current.value = ""
-        bodyRef.current.value = ""
-        history.push(`/topic/${topic}`)
-        window.location.reload()
     }
 
     return (
