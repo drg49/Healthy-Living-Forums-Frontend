@@ -73,6 +73,11 @@
         "name": "Relationships",
         "path": "/topic/Relationships",
         "desc": "A section where users can discuss their personal relationships with other people."
+    },
+    {
+        "name": "Supplements",
+        "path": "/topic/Supplements",
+        "desc": "A section where users can discuss certain supplements for their health."
     },    
     {
         "name": "Surgery & Recovery",
