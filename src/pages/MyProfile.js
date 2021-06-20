@@ -4,7 +4,7 @@ import {GlobalCtx} from "../App"
 import LogoutBtn from "../components/LogoutBtn"
 import ThreadCards from "../components/ThreadCards"
 
-const postsPerPage = 3;
+const postsPerPage = 6;
 let arrayForHoldingPosts = [];
 
 const MyProfile = () => {
@@ -34,7 +34,7 @@ const MyProfile = () => {
    const {url, token} = gState
 
    const [postsToShow, setPostsToShow] = useState([]);
-   const [next, setNext] = useState(3);
+   const [next, setNext] = useState(6);
    const [postLength, setPostLength] = useState(null)
 
    const loopWithSlice = (start, end, val) => {
@@ -73,7 +73,7 @@ const MyProfile = () => {
     <LogoutBtn />
     </div>
     <ThreadCards postsToShow={postsToShow}/>
-    {postLength !== postsToShow.length && postLength > 3 ? <button onClick={handleShowMorePosts} id="show-more">Show More</button> : null}
+    {postLength !== postsToShow.length && postLength > 6 ? <button onClick={handleShowMorePosts} id="show-more">Show More</button> : null}
     </>
  )
 }

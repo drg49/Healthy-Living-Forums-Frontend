@@ -108,6 +108,10 @@ textarea {
   }
 }
 
+#home-p, #home-h2 {
+  padding: 0px 10px;
+}
+
 #signup {
   background-color: orangered;
   color: white;
@@ -571,4 +575,10 @@ img {
     color: white;
   }
 
+}
+
+@media screen and (max-width: 613px) {
+  #home{
+    padding: 0px;
+  }
 }

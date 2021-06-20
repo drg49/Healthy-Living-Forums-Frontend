@@ -1,10 +1,9 @@
 import { useContext, useEffect, useState } from "react";
-import { useHistory } from "react-router";
 import {GlobalCtx} from "../App"
 import SingleThread from "../components/SingleThread";
 import AddComment from "../components/AddComment";
 import Comments from "../components/Comments";
-const postsPerPage = 3;
+const postsPerPage = 5;
 let arrayForHoldingPosts = [];
 
 const Thread = (props) => {
@@ -16,7 +15,7 @@ const Thread = (props) => {
     const [thread, setThread] = useState(null)
 
     const [postsToShow, setPostsToShow] = useState([]);
-    const [next, setNext] = useState(3);
+    const [next, setNext] = useState(5);
     const [postLength, setPostLength] = useState(null)
 
     const getThread = () => {
@@ -76,9 +75,9 @@ const Thread = (props) => {
     return (
         <div>
             {thread}
-            <AddComment postid={id} />
+            {thread ? <AddComment postid={id} /> : null}
             <Comments postsToShow={postsToShow}/>
-            {postLength !== postsToShow.length && postLength > 3 ? <button onClick={handleShowMorePosts} id="show-more">Show More</button> : null}
+            {postLength !== postsToShow.length && postLength > 5 ? <button onClick={handleShowMorePosts} id="show-more">Show More</button> : null}
         </div>
     )
      

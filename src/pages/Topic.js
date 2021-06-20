@@ -5,7 +5,7 @@ import topicdata from '../components/TopicData.json'
 import ThreadCards from "../components/ThreadCards";
 import loading from '../components/loading.gif'
 
-const postsPerPage = 3;
+const postsPerPage = 6;
 let arrayForHoldingPosts = [];
 
 const Topic = (props) => {
@@ -40,7 +40,7 @@ const Topic = (props) => {
     })
 
     const [postsToShow, setPostsToShow] = useState([]);
-    const [next, setNext] = useState(3);
+    const [next, setNext] = useState(6);
     const [postLength, setPostLength] = useState(null)
 
     const loopWithSlice = (start, end, val) => {
@@ -78,7 +78,7 @@ const Topic = (props) => {
             <p id="topic-desc">{name.desc}</p>
             <Link to={`/post/${topic}`}><p id="create-btn">Create New Thread</p></Link>
             {postsToShow.length > 0 ? <ThreadCards postsToShow={postsToShow}/> : <img src={loading} alt="loading" id="loading"/>}
-            {postLength !== postsToShow.length && postLength > 3 ? <button onClick={handleShowMorePosts} id="show-more">Show More</button> : null}
+            {postLength !== postsToShow.length && postLength > 6 ? <button onClick={handleShowMorePosts} id="show-more">Show More</button> : null}
         </div>
     )
     
