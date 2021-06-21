@@ -57,6 +57,10 @@ textarea {
   margin: 0px;
 }
 
+input[type=submit] {
+  -webkit-appearance: none;
+}
+
 ////////HOME - WELCOME PAGE///////
 #homepage {
   h1 {
