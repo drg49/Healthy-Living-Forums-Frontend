@@ -56,7 +56,7 @@ const SingleThread = (props) => {
             <h2>{props.author}</h2>
             <div id="thread-bottom">
                 <h3>{props.title}</h3>
-                <p>{moment(props.created_at).format('l')}</p>
+                <p>{moment(props.date).format('l')}</p>
             </div>
             {editForm ? editForm : <p>{props.body}</p>}
             {currentUser === props.author ? <div id="delete-div">
