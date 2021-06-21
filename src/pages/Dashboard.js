@@ -34,7 +34,7 @@ const Dashboard = () => {
 
     return (
     <>
-        <h2 id="dash-title">Threads</h2>
+        <h2 id="dash-title">Forums</h2>
         <section id="topics">
             {links}
         </section>

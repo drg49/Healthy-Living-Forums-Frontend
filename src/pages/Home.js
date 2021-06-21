@@ -4,7 +4,7 @@ const Home = () => {
 
     return (
         <div id="homepage">
-            <h1>Healthy Living Forum</h1>
+            <h1>Healthy Living Forums</h1>
             <section id="banner">
                 <div>
                 <div id="home">
