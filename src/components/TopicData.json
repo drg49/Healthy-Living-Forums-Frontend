@@ -1,14 +1,4 @@
-[
-    {
-        "name": "Addiction",
-        "path": "/topic/Addiction",
-        "desc": "A section where users can find support when dealing with substance abuse."
-    },
-    {
-        "name": "Adulthood",
-        "path": "/topic/Adulthood",
-        "desc": "A section where users can share their experences of entering adulthood."
-    },    
+[   
     {
         "name": "Athletics",
         "path": "/topic/Athletics",
@@ -43,12 +33,7 @@
         "name": "Illness",
         "path": "/topic/Illness",
         "desc": "A section where users can discuss symptoms of various illnesses."
-    },   
-    {
-        "name": "LGBTQ+ Section",
-        "path": "/topic/LGBTQ+ Section",
-        "desc": "A section where the LGBTQ+ community can discuss health topics pertaining to them."
-    },    
+    },       
     {
         "name": "Medications",
         "path": "/topic/Medications",
